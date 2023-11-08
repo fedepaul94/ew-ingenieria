@@ -1,5 +1,10 @@
-header {
+.main {
   display: flex;
-  position: fixed;
-  width: 100vw;
+  flex-direction: column;
+  position: absolute header {
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    background-color: aquamarine;
+  }
 }

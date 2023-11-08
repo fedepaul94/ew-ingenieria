@@ -1,8 +1,10 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
 //---------------------------
 //patron de colores
 //---------------------------
 $texto: #111111;
-$principal: #12afaf;
+$principal: rgba(131, 167, 228, 0.562);
 $secundario: #009500;
 
 /*********************SECIONES**********************/
@@ -14,20 +16,7 @@ $secundario: #009500;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0; // Color de fondo de las secciones
-
-  // Establece estilos específicos para cada sección si es necesario
-  &.section1 {
-    background-color: #ffcccc; // Color de fondo de la sección 1
-  }
-
-  &.section2 {
-    background-color: #ccffcc; // Color de fondo de la sección 2
-  }
-
-  &.section3 {
-    background-color: #ccccff; // Color de fondo de la sección 3
-  }
+  background-color: #f7f7f7; // Color de fondo de las secciones
 }
 
 //-------------------------------------------
@@ -41,4 +30,44 @@ $secundario: #009500;
   width: 80%;
   margin: 0 auto;
   display: block;
+}
+
+//-------------------------------------------
+//Servicios
+//-------------------------------------------
+
+.servicios {
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.card {
+  cursor: pointer;
+  transition: transform 0.3s;
+  transform-origin: center bottom;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 98, 255, 0.2);
+  border-radius: 5px;
+  height: 100%; /* Establece una altura fija para las tarjetas */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card i {
+  font-size: 3rem;
+  color: rgb(131, 167, 228);
+}
+
+.card-title,
+.card-text {
+  margin-top: 10px;
 }
